@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/regular_padding"
+    tools:context="com.weatherapp.dashboard.DashboardActivity">
+
+    <Spinner
+        android:id="@+id/spinner_city"
+        style="@style/CitySpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:drawableEnd="@drawable/ic_action_down"
+        android:entries="@array/city_list"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingEnd="@dimen/regular_padding"
+        android:paddingStart="@dimen/regular_padding"
+        android:paddingTop="@dimen/small_padding"
+        android:spinnerMode="dialog" />
+
+    <TextView
+        android:id="@+id/tv_weather_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/spinner_city"
+        android:gravity="end"
+        android:paddingBottom="@dimen/small_padding"
+        android:paddingEnd="@dimen/regular_padding"
+        android:paddingStart="@dimen/regular_padding"
+        android:paddingTop="@dimen/small_padding"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_city"
+        android:layout_marginTop="@dimen/regular_margin"
+        android:nestedScrollingEnabled="false" />
+</RelativeLayout>

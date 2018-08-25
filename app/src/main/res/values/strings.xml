@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+
+    <string name="api_key">02c8844439d67cd0764ef52292d14eef</string>
+
+    <string name="weather">Weather</string>
+
+    <string name="na">NA</string>
+
+    <string name="temperature">Temperature</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="rain">Rain</string>
+
+    <string name="degree_celsius">\u2103</string>
+    <string name="degree_fahrenheit">\u2109</string>
+
+    <string-array name="city_list">
+        <item>Chennai</item>
+        <item>Mumbai</item>
+        <item>Bangalore</item>
+        <item>New Delhi</item>
+        <item>Get from current location</item>
+    </string-array>
+
+    <string name="settings">Settings</string>
+
+    <string name="pref_temperature_title">Temperature preferences</string>
+    <string name="pref_temperature_summary">Choose temperature display format</string>
+
+</resources>

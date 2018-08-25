@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_weather_extra"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/divider_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/regular_padding">
+
+        <GridLayout
+            android:id="@+id/gl_weather_extra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:horizontalSpacing="1dp">
+
+            <TextView
+                style="@style/GridLayoutTextValue"
+                android:layout_columnWeight="0.5"
+                android:text="@string/humidity" />
+
+            <TextView
+                android:id="@+id/tv_humidity_value"
+                style="@style/GridLayoutTextCaption"
+                android:layout_columnWeight="0.5"
+                android:gravity="end"
+                android:text="@string/humidity" />
+
+            <TextView
+                style="@style/GridLayoutTextValue"
+                android:layout_columnWeight="0.5"
+                android:text="@string/pressure" />
+
+            <TextView
+                android:id="@+id/tv_pressure_value"
+                style="@style/GridLayoutTextCaption"
+                android:layout_columnWeight="0.5"
+                android:gravity="end"
+                android:text="@string/humidity" />
+
+            <TextView
+                style="@style/GridLayoutTextValue"
+                android:layout_columnWeight="0.5"
+                android:text="@string/rain" />
+
+            <TextView
+                android:id="@+id/tv_rain_value"
+                style="@style/GridLayoutTextCaption"
+                android:layout_columnWeight="0.5"
+                android:gravity="end"
+                android:text="@string/rain" />
+
+            <TextView
+                style="@style/GridLayoutTextValue"
+                android:layout_columnWeight="0.5"
+                android:text="@string/wind_speed" />
+
+            <TextView
+                android:id="@+id/tv_wind_value"
+                style="@style/GridLayoutTextCaption"
+                android:layout_columnWeight="0.5"
+                android:gravity="end"
+                android:text="@string/wind_speed" />
+        </GridLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/regular_margin"
+            android:layout_marginTop="@dimen/regular_margin"
+            android:background="@drawable/divider_grey" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="@dimen/regular_padding"
+            android:src="@drawable/ic_action_share" />
+    </LinearLayout>
+</LinearLayout>

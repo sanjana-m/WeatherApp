@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_temperature_title">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="temperatureChoice"
+            android:summary="Use Fahrenheit for temperature display"
+            android:summaryOff="Use Fahrenheit for temperature display"
+            android:summaryOn="Don't use Fahrenheit for temperature display"
+            android:title="Temperature display format" />
+    </PreferenceCategory>
+</PreferenceScreen>
