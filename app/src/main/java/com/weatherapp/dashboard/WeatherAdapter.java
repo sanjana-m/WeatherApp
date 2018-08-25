@@ -214,6 +214,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
     }
 
     public static class WeatherViewHolder extends RecyclerView.ViewHolder {
+        // The direct child of the CardView
         @BindView(R.id.ll_weather_main) public LinearLayout mainView;
 
         @BindView(R.id.tv_weather_day) public TextView weatherDay;
@@ -224,6 +225,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
 
         @BindView(R.id.iv_weather_more) ImageView moreIcon;
 
+        // Hidden by default, if visible, this displays additional weather data, represented by the fields below
         @BindView(R.id.ll_weather_extra) public LinearLayout moreView;
 
         @BindView(R.id.tv_humidity_value) TextView humidityValue;
@@ -231,6 +233,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<WeatherAdapter.WeatherV
         @BindView(R.id.tv_rain_value) TextView rainValue;
         @BindView(R.id.tv_wind_value) TextView windValue;
 
+        // Shares weather forecast in plaintext to sharing applications
         @BindView(R.id.iv_share) ImageView shareIcon;
 
         public WeatherViewHolder(View view) {

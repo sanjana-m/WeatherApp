@@ -6,7 +6,7 @@
             android:key="temperatureChoice"
             android:summary="Use Fahrenheit for temperature display"
             android:summaryOff="Use Fahrenheit for temperature display"
-            android:summaryOn="Don't use Fahrenheit for temperature display"
+            android:summaryOn="Don't use Fahrenheit for temperature display (Celsius will be used)"
             android:title="Temperature display format" />
     </PreferenceCategory>
 </PreferenceScreen>

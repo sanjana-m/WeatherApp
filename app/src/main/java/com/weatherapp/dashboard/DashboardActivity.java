@@ -47,6 +47,11 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * This is the main class and launcher activity.
+ * This makes a call to the weather API with the city set to Chennai, which can be changed by the Spinner on top of the page
+ */
+
 public class DashboardActivity extends AppCompatActivity {
     private static String TAG = DashboardActivity.class.getSimpleName();
 
