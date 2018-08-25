@@ -1,12 +1,13 @@
 package com.weatherapp.settings;
 
-import android.preference.PreferenceActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 
 import com.weatherapp.R;
 
-import java.util.List;
+/**
+ * Simple preference activity which loads the preference XML contaning choice of temperature metric
+ */
 
 public class SettingsActivity extends PreferenceActivity {
     public static final String TEMPERATURE_OPTION = "temperatureChoice";
